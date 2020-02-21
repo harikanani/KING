@@ -1,0 +1,155 @@
+<html>
+<head>
+	
+	<title> Online Meal | Myonlinemeal.com </title>
+	<meta charset="UTF-8">		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="StyleSheet" href="test.css">
+	<link rel="StyleSheet" href="test2.css">
+    <link rel="stylesheet" media="screen and (max-width: 1180px)" href="phone.css">
+    <style>
+        .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+    z-index: 9999;
+    transition-duration: 120s;
+    /*background: url("test2.html") center no-repeat #fff;*/
+    background: url("Preloader_11.gif") center no-repeat #262f32;
+    /*background: url("https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif") center no-repeat #fff;*/
+    /*background: url("D:\Websites\simple-pre-loader\simple-pre-loader\loading.gif") center no-repeat #fff;*/
+}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+	});
+</script>
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    <!-- <div class="ring">
+        Loading
+        <span></span>
+    </div> -->
+	<!--Navigation Bar-->
+	<nav id="navbar">
+	<div id="logo">
+		<a href="index.html"><img src="harikrushn.png" id="image"></a>
+	</div>
+		<ul>
+			<li class="items"><a href="#home">Home</a></li>
+			<li class="items"><a href="#services-container">Service</a></li>
+			<li class="items"><a href="#Clients-section">Our Clients</a></li>
+			<li class="items"><a href="#contact-box">Contact Us</a></li>
+		</ul>
+	</nav>
+	<!-- Home -->
+	<section id="home">
+		<h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		
+		<p>Lorem Ipsum is simply dummy text </p>
+		
+		<button class="btn">Order Now</button>
+	</section>
+	<!-- services -->
+	 <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				It has survived not only five centuries
+				, but also the leap into electronic typesetting, remaining essentially unchanged.
+				It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. 
+				</p>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				It has survived not only five centuries
+				, but also the leap into electronic typesetting, remaining essentially unchanged.
+				It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </div>
+            <div class="box">
+                <img src="3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				It has survived not only five centuries
+				, but also the leap into electronic typesetting, remaining essentially unchanged.
+				It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </div>
+        </div>
+    </section>
+	<!-- clients -->
+	<section id="Clients-section">
+		<h2 class="h-primary center">Our Clients</h2>
+		<div id="clients">
+			<div class="client-item">
+				<img src="logo1.png">
+			</div>
+		
+			<div class="client-item">
+				<img src="paypal.jpg">
+			</div>
+			<div class="client-item">
+				<img src="hp.jpg">
+			</div>
+			<div class="client-item">
+				<img src="microsoft.jpg">
+			</div>
+		</div>
+	</section>
+	<!-- Contact -->
+	<section id="contact">
+		<h1 class="h-primary center">Contact Us</h1>
+		<div id="contact-box">
+		<form action="">
+			
+				<div class="form-group " >
+					<label> Name: </label>
+					<input type="text" name="name" id="name" placeholder="Enter Name">
+				</div>
+				<div class="form-group " >
+					<label>Phone Number : </label>
+					<input type="Number" name="number" id="number" placeholder="Enter Phone Number">
+				</div>
+				<div class="form-group " >
+					<label>Email : </label>
+					<input type="Email" name="email" id="email" placeholder="Enter Email">
+				</div>
+				<div class="form-group " >
+					<label>Message : </label>
+					<textarea name="message" rows="5" cols="20" id="message" placeholder="Enter Message"></textarea>
+				</div>
+				<div class="form-group" >
+					<button class="btn2" >Submit</button>
+				</div>
+		</form>
+		</div>
+	</section>
+	
+	<footer>
+		Copyright &copy www.Myonlinemeal.com. All rights reserved.
+	</footer>
+</body>
+</html>
